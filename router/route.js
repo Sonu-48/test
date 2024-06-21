@@ -9,7 +9,7 @@ router.get("/", (req, res) => {
     const homedir = os.homedir();
     const desktop = path.join(homedir, 'Desktop');
     console.log("desktop", desktop);
-    res.send("you'r Desktop path is",desktop);
+    res.send(`you'r Desktop path is${desktop}`);
 
     // fs.readdir(desktop, (err, files) => {
     //     if (err) {
